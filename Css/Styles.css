@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/*TRABAJO  FLEX*/
+
+:root {
+    --first-color: #e6b171;
+    --first-alpha-color: #945206;
+    --second-color: #785f44;
+    --white-color: #ffffff;
+    --first-font: font-family: 'Abril Fatface', cursive;
+    --second-font: font-family: 'Lato', sans-serif;
+}
+/**********reset*********/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: var(--first-font);
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/**********utilities***********/
+.btn{
+    background-color: var(--first-color);
+    color: var(--white-color);
+    padding: 16px;
+    border-radius: .5rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 0;
+    font-family: var(--first-font);
+    text-transform: uppercase;
+    width: 200px;
+    transition: all 0.3s;
+}
+.btn:hover{ 
+    background-color: var(--first-alpha-color);
+}
+
+/*********site styles**********/
+/***HOME****/
+.header-home-container{
+    background-image: url(/Media/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    
+
+    
+     
+}
+/*****NAVBAR****/
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+    width: 100%;
+    transition: all 0.5s;
+    position: fixed;
+    z-index: 999999;
+}
+.nav-active{
+    background-color: var(--first-color);
+}
+.nav-container> .logo{
+    display: flex;
+    align-items: center;
+}
+.logo > img{
+    width: 40px;
+    margin-right:10px;
+}
+.logo > h1 {
+    color: var(--first-color);
+}
+.navigation> .menu{
+    display: flex;
+    column-gap: 35px;
+    font-size: 1.4rem;
+}
+.navigation >.menu > .menu-item> a {
+    color: var(--white-color);
+    transition: all 0.3s;
+    
+}
+.navigation > .menu> .menu-item> a:hover {
+    color: var(--first-color);
+    
+}
+/*****home****/
+
+.home-title {
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    width: 100%;
+}
+.home-title > h1 {
+    color: var(--white-color);
+    font-size: 5rem;
+    margin-bottom: 30px ;
+}
+.home-title > h1 >span {
+    color: var(--first-color);
+    font-size: 5rem;
+}
+
+/*****main****/
+.vh{
+height: 400vh;
+}
+
